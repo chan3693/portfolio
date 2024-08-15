@@ -4,49 +4,62 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* navigation bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #333;
-    padding: 15px;
     color: #fff;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav h2 {
     margin: 0;
-    font-size: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+    width: 100%;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
     padding: 0;
-    display: flex;
+    margin: 0;
+    width: 100%;
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin: 20px 0;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
 }
-/*  */
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
+nav ul li a:hover {
+    background-color: #444;
     border-radius: 8px;
 }
 
-h1, h2 {
-    color: #333;
+section {
+    margin-left: 300px;
+    padding: 20px;
+    flex: 1;
 }
 
 footer {
@@ -54,7 +67,43 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+/* -------------icon--------------- */
+.social-icon {
+    display: inline-block;
+    margin: 20px 10px 0;
+    text-align: center;
+}
+
+.linkedin-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #0A66C2; /* LinkedIn color */
+    transition: fill 0.3s;
+}
+
+.linkedin-icon svg:hover {
+    fill: #005582; /* Darker shade for hover effect */
+}
+
+.gmail-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #EA4335; /* Gmail color */
+    transition: fill 0.3s;
+}
+
+.gmail-icon svg:hover {
+    fill: #a4302a; /* Darker shade for hover effect */
+}
+
+.github-icon svg {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4f4; /* GitHub color */
+    transition: fill 0.3s;
+}
+
+.github-icon svg:hover {
+    fill: #838383; /* Darker shade for hover effect */
 }
