@@ -1,3 +1,4 @@
+/* General */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,6 +9,36 @@ body {
     min-height: 100vh;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    border: none;
+    outline: none;
+    background-color: #7e7e7e;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+#topBtn:hover {
+    background-color: #444;
+    transform: scale(1.1);
+}
+
+/* Navigation bar */
 nav {
     background-color: #333;
     color: #f4f4f4;
@@ -20,13 +51,13 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    margin-top: 20px;
+    transition: 0.3s;
 }
 
 nav h2 {
     margin: 0;
     padding-bottom: 20px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #444;
     width: 100%;
     text-align: center;
 }
@@ -34,12 +65,12 @@ nav h2 {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 20px 0;
     width: 100%;
 }
 
 nav ul li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 nav ul li a {
@@ -49,6 +80,7 @@ nav ul li a {
     display: block;
     padding: 10px 0;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
@@ -56,6 +88,38 @@ nav ul li a:hover {
     border-radius: 8px;
 }
 
+.social-icons {
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 20px 10px 0;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s;
+}
+
+.linkedin-icon svg { fill: #0A66C2; }
+.linkedin-icon svg:hover { fill: #005582; }
+
+.gmail-icon svg { fill: #EA4335; }
+.gmail-icon svg:hover { fill: #a4302a; }
+
+.github-icon svg { fill: #f4f4f4; }
+.github-icon svg:hover { fill: #838383; }
+
+.icon {
+    display: none;
+    color: #f4f4f4;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Main content */
 section {
     margin-left: 290px;
     margin-right: 40px;
@@ -67,48 +131,188 @@ section {
     border-radius: 12px;
 }
 
-footer {
+/* Skills */
+#skills {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#skills h2 {
     text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2em;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 30px;
+}
+
+.skills-card {
+    background-color: #fff;
+    border-radius: 12px;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
-}
-/* -------------icon--------------- */
-.social-icon {
-    display: inline-block;
-    margin: 20px 10px 0;
-    text-align: center;
+    width: calc(45% - 20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.linkedin-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: #0A66C2; /* LinkedIn color */
-    transition: fill 0.3s;
+.skills-card h3 {
+    color: #0A66C2;
+    margin-top: 0;
+    font-size: 1.5em;
 }
 
-.linkedin-icon svg:hover {
-    fill: #005582; /* Darker shade for hover effect */
+.skills-card p {
+    margin: 10px 0;
+    color: #555;
 }
 
-.gmail-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: #EA4335; /* Gmail color */
-    transition: fill 0.3s;
+.skills-card strong {
+    color: #333;
 }
 
-.gmail-icon svg:hover {
-    fill: #a4302a; /* Darker shade for hover effect */
+.skills-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.github-icon svg {
-    width: 24px;
-    height: 24px;
-    fill: #f4f4f4; /* GitHub color */
-    transition: fill 0.3s;
+/* Projects */
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
 }
 
-.github-icon svg:hover {
-    fill: #838383; /* Darker shade for hover effect */
+.video-container {
+    flex: 0 1 300px;
 }
+
+.overview-container {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section iframe {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .skills-card {
+        width: calc(100% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        width: auto;
+        height: auto;
+        position: relative;
+        padding-top: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    nav h2 {
+        padding-bottom: 0;
+        border-bottom: none;
+        width: auto;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        order: 3;
+        margin: 10px 0 0 0;
+    }
+
+    nav ul.show {
+        display: block;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px 0;
+    }
+
+    .icon {
+        display: block;
+        order: 2;
+    }
+
+    .social-icons {
+        width: 100%;
+        margin-top: 20px;
+        order: 4;
+    }
+
+    nav.responsive ul {
+        display: block;
+    }
+
+    section, #home {
+        margin-left: 0;
+        margin-right: 0;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #skills {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .skills-container {
+        gap: 20px;
+    }
+
+    .skills-card {
+        width: 100%;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    .video-container, .overview-container {
+        flex: 1 1 100%;
+    }
+
+    #topBtn {
+        bottom: 15px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #skills h2 {
+        font-size: 1.5em;
+    }
+
+    .skills-card h3 {
+        font-size: 1.2em;
+    }
+}
+

@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Portfolio - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <h2>Simon Chan</h2>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="bio.html">Bio</a></li>
@@ -16,6 +21,7 @@
             <li><a href="cover-letter.html">Cover Letter</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
+
         <!-- Social Icons -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/simon-chan" target="_blank" class="social-icon linkedin-icon">
@@ -36,11 +42,34 @@
     <section id="home">
         <h1>Welcome to My Portfolio</h1>
         <p>Hello! I'm Simon, a mobile developer with a passion for creating amazing user experiences.</p>
+
+        <div class="skills-container">
+            <div class="skills-card">
+                <h3>Programming Languages & Frameworks</h3>
+                <p><strong>Frontend & Web/Mobile Development:</strong> Swift, Kotlin, Android, iOS, React Native, JavaScript, HTML5, CSS3, Node.js, Vue.js</p>
+                <p><strong>Backend & Databases:</strong> Python, C#, MongoDB, Firebase, SQLite</p>
+            </div>
+            
+            <div class="skills-card">
+                <h3>Tools & Technologies</h3>
+                <p><strong>Version Control:</strong> Git, Sourcetree</p>
+                <p><strong>Database Management:</strong> SQL Server, MongoDB, Firebase Firestore</p>
+                <p><strong>Project Management:</strong> Jira, Azure Boards, Bitbucket</p>
+                <p><strong>API Integrations:</strong> RESTful APIs</p>
+                <p><strong>Development Environments:</strong> Xcode, Android Studio, Visual Studio Code, IntelliJ, HBuilderX</p>
+                <p><strong>Software Proficiency:</strong> Microsoft Office Suite, SharePoint, Visio, SAP, Teamcenter (PLM)</p>
+            </div>
+        </div>
     </section>
 
+    
     <footer>
         <p>&copy; 2024 Simon Chan's Portfolio</p>
     </footer>
+    
+    <button id="topBtn" onclick="scrollToTop()">Back to Top</button>
+
+    <script src="app.js"></script>
 
 </body>
 </html>

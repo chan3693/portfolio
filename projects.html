@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Portfolio - Projects</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <h2>Projects</h2>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="bio.html">Bio</a></li>
@@ -34,17 +38,65 @@
     </nav>
 
     <section id="projects">
-        <p>Here are some of my projects:</p>
-        <ul>
-            <li><a href="project1.html">Project 1</a></li>
-            <li><a href="project2.html">Project 2</a></li>
-            <li><a href="project3.html">Project 3</a></li>
-        </ul>
+        <h2>Project Demo</h2>
+
+        <div class="project-container">
+            <!-- Google Drive video -->
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1vA6WLf8gscz_tAfNQmCo0BQJppM8QLr-/preview" width="1280" height="720" allow="autoplay"></iframe>
+            </div>
+            <!-- Project Overview -->
+            <div class="overview-container">
+                <h2></h2>
+                <ul>
+                    <li><strong>Dual-App Solution:</strong> Developed Car Owner and Renter apps for electric vehicle rentals.</li>
+                    <li><strong>Car Owner App:</strong> Post vehicles, manage bookings.</li>
+                    <li><strong>Renter App:</strong> Search and book electric vehicles.</li>
+                    <li><strong>UI Design:</strong> Clean, modern design with custom components.</li>
+                    <li><strong>Seamless Navigation:</strong> Smooth transitions using React Navigation.</li>
+                    <li><strong>Firebase Integration:</strong> User authentication and data storage.</li>
+                    <li><strong>Custom API:</strong> Fetch and display vehicle info dynamically.</li>
+                    <li><strong>Key Features:</strong>
+                        <ul>
+                            <li>Create and manage vehicle listings.</li>
+                            <li>Search for rentals on a map.</li>
+                            <li>View and manage bookings.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Demonstration:</strong> Showcased with real-time updates and dual-device demo.</li>
+                </ul>
+                <p>GitHub project: <a href="https://github.com/chan3693/car-owner-app" target="_blank">car-owner-app</a> & <a href="https://github.com/chan3693/car-renter-app" target="_blank">car-renter-app</a></p>
+            </div>
+        </div>
+        <div class="project-container">
+            <!-- Google Drive video -->
+            <div class="video-container">
+                <iframe src="https://drive.google.com/file/d/1dRWEL_0_W162eB-4oReRMPOBwm35mI1n/preview" width="1280" height="720" allow="autoplay"></iframe>
+            </div>
+            <!-- Project Overview -->
+            <div class="overview-container">
+                <ul>
+                    <li><strong>React Native:</strong> Proficient in building cross-platform apps with a focus on component-based architecture and state management.</li>
+                    <li><strong>API Integration:</strong> Skilled in integrating RESTful APIs, including DailyMotion.com for dynamic video content.</li>
+                    <li><strong>Database Management:</strong> Experienced with Firebase Firestore for efficient data storage and retrieval.</li>
+                    <li><strong>UI/UX Design:</strong> Capable of designing intuitive and visually appealing interfaces using React Native’s styling.</li>
+                    <li><strong>Navigation:</strong> Expertise in using react-navigation for seamless app navigation.</li>
+                    <li><strong>Component-Based Design:</strong> Creates reusable, modular components for clean and maintainable code.</li>
+                    <li><strong>Code Quality:</strong> Adheres to best coding practices for robust and reliable performance.</li>
+                    <li><strong>Technical Problem-Solving:</strong> Strong problem-solving skills in data handling, user interaction, and API integration.</li>
+                    <li><strong>Professionalism:</strong> Committed to academic integrity and originality in development.</li>
+                </ul>
+                <p>GitHub project: <a href="https://github.com/chan3693/add-a-favourite-app" target="_blank">add-a-favourite-app</a></p>
+            </div>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Simon Chan's Portfolio</p>
     </footer>
+    
+    <button id="topBtn" onclick="scrollToTop()">Back to Top</button>
 
+    <script src="app.js"></script>
 </body>
 </html>

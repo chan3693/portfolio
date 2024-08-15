@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Portfolio - Bio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav>
+    <nav class="topnav" id="myTopnav">
         <h2>Bio</h2>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="bio.html">Bio</a></li>
@@ -16,6 +20,7 @@
             <li><a href="cover-letter.html">Cover Letter</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
+        
         <!-- Social Icons -->
         <div class="social-icons">
             <a href="https://www.linkedin.com/in/simon-chan" target="_blank" class="social-icon linkedin-icon">
@@ -45,5 +50,8 @@
         <p>&copy; 2024 Simon Chan's Portfolio</p>
     </footer>
 
+    <button id="topBtn" onclick="scrollToTop()">Back to Top</button>
+    
+    <script src="app.js"></script>
 </body>
 </html>
