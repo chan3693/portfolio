@@ -1,7 +1,7 @@
 // Resume download control
 if (window.location.pathname.endsWith('resume.html')){
   let repositories = "portfolio"
-  let docId = "08333548a631d25460ce33acaaab131c66f103a7"
+  let docId = "2da41694eba16ef68b466bebd68810231ef27cf6"
   let docName = "SheungKitChan_Resume"
   let resumeLink = document.getElementById('resumeLink'); 
   resumeLink.href = `https://raw.githubusercontent.com/chan3693/${repositories}/${docId}/${docName}.pdf`;
