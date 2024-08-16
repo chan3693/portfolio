@@ -29,7 +29,6 @@ const myProjects = [
             { subtitle: "UI/UX Design", description: "Capable of designing intuitive and visually appealing interfaces using React Native’s styling." },
             { subtitle: "Navigation", description: "Expertise in using react-navigation for seamless app navigation." },
             { subtitle: "Component-Based Design", description: "Creates reusable, modular components for clean and maintainable code." },
-            { subtitle: "Code Quality", description: "Adheres to best coding practices for robust and reliable performance." },
             { subtitle: "Technical Problem-Solving", description: "Strong problem-solving skills in data handling, user interaction, and API integration." }
         ]
     },
