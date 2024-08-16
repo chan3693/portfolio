@@ -1,10 +1,10 @@
 // Resume download control
+let link = "https://github.com/chan3693/portfolio/blob/dcafe670e6922c84fa92b73d51241d8cc7eda24a/SheungKitChan_Resume.pdf"
+let rawLink = link.replace('github.com', 'raw.githubusercontent.com').replace('/blob', '')
 if (window.location.pathname.endsWith('resume.html')){
-  let repositories = "portfolio"
-  let docId = "2da41694eba16ef68b466bebd68810231ef27cf6"
-  let docName = "SheungKitChan_Resume"
+  console.log(rawLink)
   let resumeLink = document.getElementById('resumeLink'); 
-  resumeLink.href = `https://raw.githubusercontent.com/chan3693/${repositories}/${docId}/${docName}.pdf`;
+  resumeLink.href = rawLink;
   console.log('resume prepared for download')
 }
 
