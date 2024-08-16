@@ -1,3 +1,10 @@
+// resume control
+let repositories = "portfolio"
+let docId = "08333548a631d25460ce33acaaab131c66f103a7"
+let docName = "SheungKitChan_Resume"
+let resumeLink = document.getElementById('resumeLink'); 
+resumeLink.href = `https://raw.githubusercontent.com/chan3693/${repositories}/${docId}/${docName}.pdf`;
+
 function toggleNav() {
     var nav = document.getElementById("myTopnav");
     if (nav.className === "topnav") {
