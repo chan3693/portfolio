@@ -299,6 +299,14 @@ section iframe {
         padding: 20px;
     }
 
+    section h1  {
+        text-align: center;
+    }
+
+    section h2  {
+        text-align: center;
+    }
+
     #skills {
         padding: 20px;
         margin: 10px;
@@ -314,6 +322,7 @@ section iframe {
 
     .project-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .video-container, .overview-container {
