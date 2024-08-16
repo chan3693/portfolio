@@ -1,4 +1,4 @@
-const projects = [
+const myProjects = [
     {
         title: "Cross-Platform Car owner and renter app",
         videoUrl: "https://drive.google.com/file/d/1vA6WLf8gscz_tAfNQmCo0BQJppM8QLr-/preview",
@@ -37,6 +37,9 @@ const projects = [
         title: "Cross-Platform book-a-room app",
         videoUrl: "https://drive.google.com/file/d/19l8gDULvACwOVFGMw1Ih9nBVtjIo_KQg/preview",
         githubLinks: [{ name: "book-a-room-app", url: "https://github.com/chan3693/book-a-room-app" }],
-        features: []
-    }
+        features: [
+
+        ]
+    },
+    
 ];
