@@ -1,5 +1,5 @@
 // Resume download control
-let link = "https://github.com/chan3693/portfolio/blob/6c227e316bcd3b925a8feb673d0b7a2c9ef612be/SheungKitChan_Resume.pdf"
+let link = "https://github.com/chan3693/portfolio/blob/f4d43de07a84f67575d7582de57f60c5e3e03c2f/SheungKitChan_Resume.pdf"
 let rawLink = link.replace('github.com', 'raw.githubusercontent.com').replace('/blob', '')
 if (window.location.pathname.endsWith('resume.html')){
   console.log(rawLink)
