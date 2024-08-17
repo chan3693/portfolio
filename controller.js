@@ -64,7 +64,7 @@ function renderProjects(projects) {
     const overviewDiv = document.createElement('div');
     overviewDiv.className = 'overview-container';
     // overviewDiv.classList.add('overview-container')
-    overviewDiv.innerHTML = `<h2>${project.title}</h2>`;
+    overviewDiv.innerHTML = `<h3>${project.title}</h3>`;
 
     if (project.features.length > 0) {
       const ul = document.createElement('ul');

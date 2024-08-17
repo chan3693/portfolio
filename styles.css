@@ -126,7 +126,7 @@ nav ul li a:hover {
 
 .pdf-icon {
     display: inline-block;
-    margin: 0 12px 0;
+    margin-left: 8px;
 }
 
 .pdf-icon svg {
@@ -152,25 +152,10 @@ section {
 }
 
 /* Skills */
-#skills {
-    background-color: #f4f4f4;
-    border-radius: 8px;
-    padding: 40px;
-    margin: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-#skills h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 40px;
-    font-size: 2em;
-}
-
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: flex-start;
     margin-top: 30px;
 }
@@ -179,7 +164,7 @@ section {
     background-color: #fff;
     border-radius: 12px;
     padding: 20px;
-    width: calc(45% - 20px); 
+    width: calc(40%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -210,18 +195,18 @@ section {
     flex-wrap: wrap;
     gap: 20px;
     align-items: flex-start;
+    margin-bottom: 50px;
 }
 
 .video-container {
-    flex: 0 1 300px;
+    flex: 1 1 300px;
 }
 
 .overview-container {
     flex: 1 1 300px;
     background-color: #fff;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 50px;
+    padding: 0 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -231,6 +216,25 @@ section iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+}
+
+section img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.profile-info {
+    margin-left: 40px;
+    height: 220px;
 }
 
 /* Responsive */
@@ -292,7 +296,7 @@ section iframe {
         display: block;
     }
 
-    section, #home {
+    section {
         margin-left: 0;
         margin-right: 0;
         margin: 20px;
@@ -307,9 +311,8 @@ section iframe {
         text-align: center;
     }
 
-    #skills {
-        padding: 20px;
-        margin: 10px;
+    .profile-info h2 {
+        text-align: start;
     }
 
     .skills-container {
@@ -320,8 +323,12 @@ section iframe {
         width: 100%;
     }
 
+    #resume h1 {
+        margin-left: 8px;
+    }
+
     .project-container {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: center;
     }
 
@@ -335,11 +342,50 @@ section iframe {
     }
 }
 
-@media screen and (max-width: 480px) {
-    #skills h2 {
-        font-size: 1.5em;
+@media screen and (max-width: 888px) and (min-width: 769px) {
+    #home h1 {
+        text-align: center;
     }
 
+    .profile {
+        flex-direction: column;
+    }
+    
+    .profile-info {
+        margin: 0px;
+        /* text-align: center; */
+    }
+
+    .profile-info h2 {
+        text-align: center;
+    }
+
+    .project-container {
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .video-container, .overview-container {
+        flex: 1 1 100%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .profile {
+        flex-direction: column;
+    }
+    
+    .profile-info {
+        margin: 0px;
+        /* text-align: center; */
+    }
+
+    .profile-info h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
     .skills-card h3 {
         font-size: 1.2em;
     }
