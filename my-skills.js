@@ -3,9 +3,9 @@ const mySkills = [
         title: "Programming Languages & Frameworks",
         content: [
             { category: "Frontend & Web/Mobile Development", 
-                skills: "Swift, Kotlin, JavaScript, HTML5, CSS3, React.js, Vue.js, Android, iOS, React Native, SwiftUI, UIKit" },
+                skills: "Swift, Kotlin, JavaScript, HTML5, CSS3, React.js, Vue.js, iOS, Android, React Native, SwiftUI, UIKit" },
             { category: "Backend & Databases", 
-                skills: "Node.js, Express.js, RESTful APIs, Python, C#, MongoDB, Firebase, Core Data, SQLite, SQLAlchemy" },
+                skills: "Node.js, Express.js, RESTful APIs, Python, C#, MongoDB, Firebase, SQLite" },
             ]
     },
     {
