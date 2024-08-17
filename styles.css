@@ -85,7 +85,7 @@ nav ul li a {
     display: block;
     padding: 10px 0;
     text-align: center;
-    transition: background-color 0.3s;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
