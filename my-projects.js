@@ -1,7 +1,7 @@
 const myProjects = [
     {
         title: "Cross-Platform Car owner and renter app",
-        videoUrl: "https://drive.google.com/file/d/1vA6WLf8gscz_tAfNQmCo0BQJppM8QLr-/preview",
+        videoUrl: "https://drive.google.com/file/d/1vA6WLf8gscz_tAfNQmCo0BQJppM8QLr-/view?usp=sharing",
         githubLinks: [
             { name: "car-owner-app", url: "https://github.com/chan3693/car-owner-app" },
             { name: "car-renter-app", url: "https://github.com/chan3693/car-renter-app" }
@@ -20,7 +20,7 @@ const myProjects = [
     },
     {
         title: "Cross-Platform add-a-favourite app",
-        videoUrl: "https://drive.google.com/file/d/1dRWEL_0_W162eB-4oReRMPOBwm35mI1n/preview",
+        videoUrl: "https://drive.google.com/file/d/1dRWEL_0_W162eB-4oReRMPOBwm35mI1n/view?usp=sharing",
         githubLinks: [{ name: "add-a-favourite-app", url: "https://github.com/chan3693/add-a-favourite-app" }],
         features: [
             { subtitle: "React Native", description: "Proficient in building cross-platform apps with a focus on component-based architecture and state management." },
@@ -34,8 +34,16 @@ const myProjects = [
     },
     {
         title: "Cross-Platform book-a-room app",
-        videoUrl: "https://drive.google.com/file/d/19l8gDULvACwOVFGMw1Ih9nBVtjIo_KQg/preview",
+        videoUrl: "https://drive.google.com/file/d/19l8gDULvACwOVFGMw1Ih9nBVtjIo_KQg/view?usp=sharing",
         githubLinks: [{ name: "book-a-room-app", url: "https://github.com/chan3693/book-a-room-app" }],
+        features: [
+
+        ]
+    },
+    {
+        title: "iOS Nature Walk app",
+        videoUrl: "https://drive.google.com/file/d/1CEnlYi1etacrnhivi8gX0hbBPuW4WvmW/view?usp=sharing",
+        githubLinks: [{ name: "ios-new-naturewalk-app", url: "https://github.com/chan3693/ios-new-naturewalk-app" }],
         features: [
 
         ]

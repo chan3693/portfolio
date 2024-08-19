@@ -18,12 +18,15 @@
             console.log(`Total projects : ${projects.length}`)
 
             projects.forEach(project => {
+                let videoUrl = project.videoUrl
+                let videoPreviewUrl = videoUrl.replace('view?usp=sharing', 'preview')
+
                 const projectDiv = document.createElement('div');
                 projectDiv.className = 'project-container';
 
                 const videoDiv = document.createElement('div');
                 videoDiv.className = 'video-container';
-                videoDiv.innerHTML = `<iframe src="${project.videoUrl}" width="1280" height="720" allow="autoplay"></iframe>`;
+                videoDiv.innerHTML = `<iframe src="${videoPreviewUrl}" width="1280" height="720" allow="autoplay"></iframe>`;
                 projectDiv.appendChild(videoDiv);
 
                 const overviewDiv = document.createElement('div');
