@@ -7,6 +7,59 @@
     <link rel="icon" type="image/x-icon" href="https://github.com/chan3693/portfolio/blob/e7cde8d5440591104b574c362ef8f2260391f4b6/favicon.ico?raw=true">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProjects(myProjects)
+        });
+        // Projects loop
+        function renderProjects(projects) {
+            const projectContainer = document.getElementById('projects');
+            console.log('DOM content loaded')
+            console.log(`Total projects : ${projects.length}`)
+
+            projects.forEach(project => {
+                const projectDiv = document.createElement('div');
+                projectDiv.className = 'project-container';
+
+                const videoDiv = document.createElement('div');
+                videoDiv.className = 'video-container';
+                videoDiv.innerHTML = `<iframe src="${project.videoUrl}" width="1280" height="720" allow="autoplay"></iframe>`;
+                projectDiv.appendChild(videoDiv);
+
+                const overviewDiv = document.createElement('div');
+                overviewDiv.className = 'overview-container';
+                overviewDiv.innerHTML = `<h3>${project.title}</h3>`;
+
+                if (project.features.length > 0) {
+                const ul = document.createElement('ul');
+                project.features.forEach(feature => {
+                    const li = document.createElement('li');
+                    li.innerHTML = `<strong>${feature.subtitle}:</strong> ${feature.description}`;
+                    ul.appendChild(li);
+                });
+                overviewDiv.appendChild(ul);
+                }
+
+                const p = document.createElement('p');
+                p.textContent = 'GitHub project:';
+                project.githubLinks.forEach( (link, index) => {
+                const a = document.createElement('a');
+                a.href = link.url;
+                a.target = '_blank';
+                a.textContent = link.name;
+                p.appendChild(a);
+
+                if (index < project.githubLinks.length-1){
+                    p.appendChild(document.createTextNode(' & '));
+                }
+                });
+                overviewDiv.appendChild(p);
+
+                projectDiv.appendChild(overviewDiv);
+                projectContainer.appendChild(projectDiv);
+            });
+        }
+    </script>
 </head>
 <body>
     <nav class="topnav" id="myTopnav">

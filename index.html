@@ -7,6 +7,35 @@
     <link rel="icon" type="image/x-icon" href="https://github.com/chan3693/portfolio/blob/e7cde8d5440591104b574c362ef8f2260391f4b6/favicon.ico?raw=true">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderSkillsCards(mySkills); 
+        });
+
+        // index skills cards
+        function renderSkillsCards(skills) {
+            const container = document.getElementById('skills-container');
+            skills.forEach(skill => {
+                const card = document.createElement('div');
+                card.classList.add('skills-card');
+
+                const title = document.createElement('h3');
+                title.textContent = skill.title;
+                card.appendChild(title);
+
+                skill.content.forEach(item => {
+                    const p = document.createElement('p');
+                    const strong = document.createElement('strong');
+                    strong.textContent = item.category + ": ";
+                    p.appendChild(strong);
+                    p.appendChild(document.createTextNode(item.skills));
+                    card.appendChild(p);
+                });
+
+                container.appendChild(card);
+            });
+        }
+    </script>
 </head>
 
 <body>
