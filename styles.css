@@ -410,6 +410,10 @@ section img {
         font-size: 1.2em;
     }
 
+    .project-container {
+        gap: 10px;
+    }
+
     .project-button {
         gap: 1px;
     }
