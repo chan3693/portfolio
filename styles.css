@@ -228,6 +228,7 @@ section {
 .project-button button {
     border: none;
     background-color: #f4f4f4;
+    color: #333;
     border-radius: 8px;
     cursor: pointer; 
 }
@@ -364,7 +365,7 @@ section img {
     }
 }
 
-@media screen and (max-width: 888px) and (min-width: 769px) {
+@media screen and (max-width: 900px) and (min-width: 770px) {
     #home h1 {
         text-align: center;
     }
@@ -381,7 +382,9 @@ section img {
     .profile-info h2 {
         text-align: center;
     }
+}
 
+@media screen and (max-width: 1024px) and (min-width: 770px) {
     .project-inner-container {
         flex: 1 1 100%;
     }
@@ -406,5 +409,14 @@ section img {
     .skills-card h3 {
         font-size: 1.2em;
     }
+
+    .project-button {
+        gap: 1px;
+    }
+    
+    .project-button button {
+        font-size: 0.8em;
+    }
+
 }
 
