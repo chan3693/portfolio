@@ -411,12 +411,12 @@ section img {
     }
 
     .project-title-container {
-        gap: 0px;
+        gap: 5px;
     }
 
     .project-button {
         gap: 0px;
     }
-    
+ 
 }
 
