@@ -9,11 +9,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            renderProjects(myProjects)
+            try {
+                renderProjects(myProjects)
+
+                const allButton = document.getElementById('all')
+                const reactNativeButton = document.getElementById('react-native')
+                const iosButton = document.getElementById('ios')
+                const androidButton = document.getElementById('android')
+
+                if (allButton) {
+                    allButton.addEventListener('click', () => {
+                        renderProjects(myProjects)
+                    })
+                }
+
+                if (reactNativeButton) {
+                    try {
+                        reactNativeButton.addEventListener('click', () => {
+                            const reactNativeProjects = myProjects.filter(project => project.technology === 'React Native');
+                            renderProjects(reactNativeProjects);
+                        })
+                    } catch (err) {
+                        console.log(`Error while filtering reactNativeProjects : ${err}`)
+                    }
+                 
+                } 
+                
+                if (iosButton) {
+                    try {
+                        iosButton.addEventListener('click', () => {
+                            const iosProjects = myProjects.filter(project => project.technology === 'iOS');
+                            renderProjects(iosProjects)
+                        })
+                    } catch (err) {
+                        console.log(`Error while filtering iosProjects : ${err}`)
+                    }
+                }
+                
+                if (androidButton) {
+                    try {
+                        androidButton.addEventListener('click', () => {
+                            const androidProjects = myProjects.filter(project => project.technology === 'Android');
+                            renderProjects(androidProjects)
+                        })
+                    } catch (err) {
+                        console.log(`Error while filtering androidProjects : ${err}`)
+                    }   
+                }
+            } catch(err) {
+                console.log(`Error while initializing projects: ${err}`)
+            }
+
         });
+
+    
         // Projects loop
         function renderProjects(projects) {
             const projectContainer = document.getElementById('projects');
+            projectContainer.innerHTML = '';
+
             console.log('DOM content loaded')
             console.log(`Total projects : ${projects.length}`)
 
@@ -22,7 +76,7 @@
                 let videoPreviewUrl = videoUrl.replace('view?usp=sharing', 'preview')
 
                 const projectDiv = document.createElement('div');
-                projectDiv.className = 'project-container';
+                projectDiv.className = 'project-inner-container';
 
                 const videoDiv = document.createElement('div');
                 videoDiv.className = 'video-container';
@@ -95,8 +149,16 @@
     </nav>
 
     <section>
-        <h1>Projects Demo</h1>
-        <div id="projects"></div>
+        <div class="project-title-container">
+            <h1>Projects Demo</h1>
+            <div class="project-button">
+                <button id="all">All</button>
+                <button id="react-native">React Native</button>
+                <button id="ios">iOS</button>
+                <button id="android">Android</button>
+            </div>
+        </div>
+        <div id="projects" class="project-container"></div>
     </section>    
 
     <footer>

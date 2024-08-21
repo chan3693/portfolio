@@ -1,5 +1,6 @@
 const myProjects = [
     {
+        technology: "React Native",
         title: "Cross-Platform Car owner and renter app",
         videoUrl: "https://drive.google.com/file/d/1vA6WLf8gscz_tAfNQmCo0BQJppM8QLr-/view?usp=sharing",
         githubLinks: [
@@ -19,6 +20,7 @@ const myProjects = [
         ]
     },
     {
+        technology: "React Native",
         title: "Cross-Platform add-a-favourite app",
         videoUrl: "https://drive.google.com/file/d/1dRWEL_0_W162eB-4oReRMPOBwm35mI1n/view?usp=sharing",
         githubLinks: [{ name: "add-a-favourite-app", url: "https://github.com/chan3693/add-a-favourite-app" }],
@@ -33,6 +35,7 @@ const myProjects = [
         ]
     },
     {
+        technology: "React Native",
         title: "Cross-Platform book-a-room app",
         videoUrl: "https://drive.google.com/file/d/19l8gDULvACwOVFGMw1Ih9nBVtjIo_KQg/view?usp=sharing",
         githubLinks: [{ name: "book-a-room-app", url: "https://github.com/chan3693/book-a-room-app" }],
@@ -41,6 +44,7 @@ const myProjects = [
         ]
     },
     {
+        technology: "iOS",
         title: "iOS Nature Walk app",
         videoUrl: "https://drive.google.com/file/d/1CEnlYi1etacrnhivi8gX0hbBPuW4WvmW/view?usp=sharing",
         githubLinks: [{ name: "ios-new-naturewalk-app", url: "https://github.com/chan3693/ios-new-naturewalk-app" }],
@@ -48,5 +52,51 @@ const myProjects = [
 
         ]
     },
-    
+    {
+        technology: "iOS",
+        title: "iOS Parking app",
+        videoUrl: "",
+        githubLinks: [{ name: "ios-parking-app", url: "https://github.com/chan3693/ios-parking-app" }],
+        features: [
+
+        ]
+    },
+    {
+        technology: "iOS",
+        title: "iOS Ticket app",
+        videoUrl: "",
+        githubLinks: [{ name: "ios-ticket-app", url: "https://github.com/chan3693/ios-ticket-app" }],
+        features: [
+
+        ]
+    },
+    {
+        technology: "iOS",
+        title: "iOS Restaurants app",
+        videoUrl: "",
+        githubLinks: [{ name: "ios-restaurants-app", url: "https://github.com/chan3693/ios-restaurants-app" }],
+        features: [
+
+        ]
+    },
+    {
+        technology: "iOS",
+        title: "iOS Coffee app",
+        videoUrl: "",
+        githubLinks: [{ name: "ios-coffee-app", url: "https://github.com/chan3693/ios-coffee-app" }],
+        features: [
+
+        ]
+    },
+    {
+        technology: "Android",
+        title: "Android Landlord & Renter app",
+        videoUrl: "",
+        githubLinks: [{ name: "android-landlord-app", url: "https://github.com/chan3693/android-landlord-app" },
+            { name: "android-renter-app", url: "https://github.com/chan3693/android-renter-app" } 
+        ],
+        features: [
+
+        ]
+    },
 ];
