@@ -55,7 +55,7 @@ const myProjects = [
     {
         technology: "iOS",
         title: "iOS Parking app",
-        videoUrl: "",
+        videoUrl: "https://drive.google.com/file/d/1iCMzQtyAlBu9RTu_w00CdKgTYm7PlQhz/view?usp=sharing",
         githubLinks: [{ name: "ios-parking-app", url: "https://github.com/chan3693/ios-parking-app" }],
         features: [
 
@@ -64,7 +64,7 @@ const myProjects = [
     {
         technology: "iOS",
         title: "iOS Ticket app",
-        videoUrl: "",
+        videoUrl: "https://drive.google.com/file/d/1cP5KPhuhRA78SC-oxlhSRJgIEAJ2_MYi/view?usp=sharing",
         githubLinks: [{ name: "ios-ticket-app", url: "https://github.com/chan3693/ios-ticket-app" }],
         features: [
 
@@ -73,7 +73,7 @@ const myProjects = [
     {
         technology: "iOS",
         title: "iOS Restaurants app",
-        videoUrl: "",
+        videoUrl: "https://drive.google.com/file/d/1h1D3UL2Ksz3BPSt2kitFrXjUcp-XNir0/view?usp=sharing",
         githubLinks: [{ name: "ios-restaurants-app", url: "https://github.com/chan3693/ios-restaurants-app" }],
         features: [
 
@@ -82,7 +82,7 @@ const myProjects = [
     {
         technology: "iOS",
         title: "iOS Coffee app",
-        videoUrl: "",
+        videoUrl: "https://drive.google.com/file/d/1OnvzothPtx59YoI3HoX_wBWsyTihYrc8/view?usp=sharing",
         githubLinks: [{ name: "ios-coffee-app", url: "https://github.com/chan3693/ios-coffee-app" }],
         features: [
 
