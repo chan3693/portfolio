@@ -99,4 +99,54 @@ const myProjects = [
 
         ]
     },
+    {
+        technology: "Android",
+        title: "Android Products app",
+        videoUrl: "https://drive.google.com/file/d/1rg3XFquMXTFXw7h3a6z7hdKMwRmj-jnF/view?usp=sharing",
+        githubLinks: [{ name: "android-products-app", url: "https://github.com/chan3693/android-products-app" } 
+        ],
+        features: [
+
+        ]
+    },
+    {
+        technology: "Android",
+        title: "Android task app",
+        videoUrl: "https://drive.google.com/file/d/1MLZJWD_vk9JUc6oCrZWuXhUsgI9O80vY/view?usp=sharing",
+        githubLinks: [{ name: "android-task-app", url: "https://github.com/chan3693/android-task-app" } 
+        ],
+        features: [
+
+        ]
+    },
+    {
+        technology: "Android",
+        title: "Android Lession app",
+        videoUrl: "https://drive.google.com/file/d/1dRWEL_0_W162eB-4oReRMPOBwm35mI1n/view?usp=sharing",
+        githubLinks: [{ name: "android-lession-app", url: "https://github.com/chan3693/android-lession-app" } 
+        ],
+        features: [
+
+        ]
+    },
+    {
+        technology: "Android",
+        title: "Android Utility Bill Calculator app",
+        videoUrl: "https://drive.google.com/file/d/1mFBOUE2ItmLkmCxeEphBjuAxjn8T4RiE/view?usp=sharing",
+        githubLinks: [{ name: "android-ubc-app", url: "https://github.com/chan3693/android-ubc-app" } 
+        ],
+        features: [
+
+        ]
+    },
+    {
+        technology: "Android",
+        title: "Android College Enrollment System app",
+        videoUrl: "https://drive.google.com/file/d/1pWHuBZpaKprAmN592YGA0WwoNAPeo_te/view?usp=sharing",
+        githubLinks: [{ name: "android-ces-app", url: "https://github.com/chan3693/android-ces-app" } 
+        ],
+        features: [
+
+        ]
+    },
 ];
