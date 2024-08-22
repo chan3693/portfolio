@@ -1,9 +1,9 @@
 const mySkills = [
     {
-        title: "Programming Languages & Frameworks",
+        title: "Programming Skills",
         content: [
             { category: "Frontend & Web/Mobile Development", 
-                skills: "Swift, Kotlin, JavaScript, HTML5, CSS3, React.js, Vue.js, iOS, Android, React Native, SwiftUI, UIKit" },
+                skills: "Swift, Kotlin, JavaScript, HTML5, CSS3, React.js, iOS, Android, React Native, SwiftUI, UIKit" },
             { category: "Backend & Databases", 
                 skills: "Node.js, Express.js, RESTful APIs, Python, C#, MongoDB, Firebase, SQLite" },
             ]
@@ -23,6 +23,14 @@ const mySkills = [
                 skills: "Microsoft Office Suite, SharePoint, Visio, SAP, Teamcenter (PLM), Postman" },
             ]
     },
+    {
+        title: "Soft Skills",
+        content: [
+            {
+                skills: "Critical Thinking, Problem-Solving, Adaptability, Time Management, Conflict Management, Effective Communication, Teamwork, Creativity, Persuasion"
+            }
+        ]
+    }
 ]
 
 

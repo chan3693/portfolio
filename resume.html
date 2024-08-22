@@ -25,10 +25,14 @@
                 skill.content.forEach(item => {
                     const li = document.createElement('li');
                     const strong = document.createElement('strong');
-                    strong.textContent = item.category + ": ";
-                    li.appendChild(strong);
+
+                    if (item.category){
+                        strong.textContent = item.category + ": ";
+                        li.appendChild(strong);     
+                    }
                     li.appendChild(document.createTextNode(item.skills));
                     ul.appendChild(li);
+                    
                 });
 
                 container.appendChild(ul);
@@ -86,16 +90,16 @@
         <h2>Highlights of Qualifications</h2>
         <ul>
             <li><strong>Specialized in Web and Mobile Development:</strong>
-                Rich experience in designing, developing, and deploying online and mobile applications for Web, iOS and Android platforms. Proven ability to create user-centric, responsive, and high-performing apps.</li>
+                Experienced in designing, developing, and deploying online and mobile applications for Web, iOS and Android platforms. Proven ability to create user-centric, responsive, and high-performing apps.</li>
             <br>
             <li><strong>Comprehensive IT Business Analysis:</strong>
-                Strong analytical skills in conducting thorough project management, user requirement analysis, translating business needs into technical solutions, and aligning online & mobile planform features with user expectations (UX). Proficient in documenting functional specifications and ensuring alignment with stakeholder requirements.</li>
+                Strong analytical skills and problem solving in conducting thorough project management, user requirement analysis, translating business needs into technical solutions, and aligning online & mobile planform features with user expectations. Proficient in documenting functional specifications and ensuring alignment with stakeholder requirements.</li>
             <br>
             <li><strong>Full SDLC Proficiency:</strong>
-                Strong background in the Software Development Life Cycle, with hands-on experience in Agile/Scrum and Waterfall methodologies, ensuring timely delivery of high-quality solutions.</li>
+                Strong background in the Software Development Life Cycle, with hands-on experience in Agile/Scrum and Waterfall methodologies, ensuring timely delivery of high-quality solutions. Proactively engage users for UAT testing to validate and ensure that the solutions meet business requirements and quality standards before deployment.</li>
             <br>
             <li><strong>Effective Collaboration:</strong>
-                Proficient in working within cross-functional team environments and handling both independent and collaborative projects. Recognized for clear communication and the ability to drive projects to successful completion.</li>
+                Proficient in working within cross-functional team environments and handling both independent and collaborative projects. Recognized for effective communication and the ability to drive projects to successful completion.</li>
         </ul>
         
         <hr>
@@ -140,55 +144,30 @@
         <h3>IT Business Analyst (e-Banking & User Experience)</h3>
         <p><strong>Bank of China (Hong Kong), Hong Kong</strong><br>
         Sep 2022 – Nov 2023</p>
-        <h4>Key Projects:</h4>
         <ul>
-            <li><strong>Online E-Mortgage Appointment and Application:</strong>
-                Led the development and implementation of a new online e-mortgage platform, enhancing user convenience and operational efficiency.</li>
-            <li><strong>Transactional Net Promoter Score (tNPS) Implementation:</strong>
-                Implemented the tNPS system across various online and mobile banking features transaction, enhancing service quality and increasing customer satisfaction.</li>
-            <li><strong>Daily Online and Mobile Banking Customer Complaints:</strong>
-                Managed and resolved daily customer complaints for online and mobile banking services, ensuring effective issue resolution and maintaining high customer satisfaction.</li>
-        </ul>
-        <h4>Achievements:</h4>
-        <ul>
-            <li><strong>Enhanced Digital Banking Functionality:</strong>
-                Conducted thorough business analysis, leading to a 20% increase in user satisfaction by optimizing digital banking functionalities.</li>
-            <li><strong>Improved Stakeholder Communication:</strong>
-                Streamlined communication processes, aligning project goals and reducing miscommunication by 30%.</li>
-            <li><strong>Efficient UAT Management:</strong>
-                Oversaw User Acceptance Testing (UAT), ensuring solutions were functional, user-friendly, and contributed to a 25% defects reduction.</li>
-            <li><strong>User Support and Training:</strong>
-                Provided comprehensive support and training for new functionalities, resulting in a 15% reduction in support tickets and increased user proficiency.</li>
-            <li><strong>Increased Online Banking Adoption:</strong>
-                Led impactful projects that improved functionality and user experience, achieving a 15% increase in online banking adoption.</li>
-            <li><strong>Effective Team Coordination:</strong>
-                Coordinated with cross-functional teams to deliver projects on time and within budget, enhancing team efficiency by 10%.</li>
-            <li><strong>Optimized Service Response:</strong>
-                Implemented customer feedback mechanisms, improving service response times by 20%.</li>
+            <li><strong>Online E-Mortgage Appointment and Application:</strong> Led the development and implementation of a new online e-mortgage platform, significantly enhancing user convenience and operational efficiency by 30%.</li>
+            <li><strong>Transactional Net Promoter Score (tNPS) Implementation:</strong> Successfully implemented the tNPS system across various online and mobile banking transactions, improving service quality and boosting customer satisfaction by 30%.</li>
+            <li><strong>Digital Banking Customer Complaint Management:</strong> Managed and resolved daily customer complaints for online and mobile banking services, ensuring timely and effective issue resolution, which maintained high customer satisfaction by 30%.</li>
+            <li><strong>Digital Banking Functional Enhancements:</strong> Conducted thorough business analysis, leading to a 20% increase in user satisfaction by optimizing digital banking functionalities.</li>
+            <li><strong>Stakeholder Communication Improvement:</strong> Streamlined communication processes, aligning project goals and reducing miscommunication by 30%.</li>
+            <li><strong>Efficient UAT Management:</strong> Oversaw User Acceptance Testing (UAT) to validate and confirm that solutions met business requirements and quality standards before deployment. This ensured functional, user-friendly solutions, contributing to a 25% reduction in defects.</li>
+            <li><strong>User Support and Training:</strong> Provided comprehensive support and training for new functionalities, resulting in a 15% reduction in support tickets and increased user proficiency.</li>
+            <li><strong>Online Banking Adoption:</strong> Led impactful projects that enhanced functionality and user experience, achieving a 15% increase in online banking adoption.</li>
+            <li><strong>Effective Team Coordination:</strong> Coordinated with cross-functional teams to deliver projects on time and within budget, boosting team efficiency by 10%.</li>
+            <li><strong>Service Response Optimization:</strong> Implemented customer feedback mechanisms, improving service response times by 20%.</li>
         </ul>
 
         <h3>Technical Documentation Engineer (Product Lifecycle Management Analysis)</h3>
         <p><strong>ASM Pacific Technology Ltd, Hong Kong</strong><br>
         Sep 2020 – Sep 2022</p>
-        <h4>Key Projects:</h4>
         <ul>
-            <li><strong>Part Model Number Assignation (PMNA) System:</strong>
-                Led the development and implementation of an online registration and enquiry system for new part models. Ensured the accurate flow of information and streamlined processing for greater efficiency.</li>
-            <li><strong>System Enhancements:</strong>
-                Utilized Azure Boards to conduct system enhancements, including backlog creation and bug tracking, to refine system functionalities and performance.</li>
-            <li><strong>Daily System and User Support:</strong>
-                Provided continuous support for system operations, promptly addressing issues to ensure smooth and effective user experiences.</li>
-        </ul>
-        <h4>Achievements:</h4>
-        <ul>
-            <li><strong>Improved PMNA System Efficiency:</strong>
-                Managed the PMNA system and its daily user support, leading to a 30% reduction in registration time and significantly enhancing operational efficiency.</li>
-            <li><strong>Boosted Teamcenter (PLM) Productivity:</strong>
-                Supported the Teamcenter (PLM) system, implementing functionality enhancements and daily support, which resulted in a 20% increase in overall productivity.</li>
-            <li><strong>Optimized Document Management:</strong>
-                Enhanced document management processes to ensure ISO compliance and improve document retrieval efficiency by 25%.</li>
-            <li><strong>Maintained Documentation Accuracy:</strong>
-                Conducted regular document audits and supported training management, ensuring accuracy and consistency in documentation.</li>
+            <li><strong>Part Model Number Assignation (PMNA) System:</strong> Led the development and implementation of an online registration and enquiry system for new part models. Ensured the accurate flow of information and streamlined processing for greater efficiency by 30%.</li>
+            <li><strong>System Enhancements:</strong> Utilized Azure Boards to conduct system enhancements, including backlog creation and bug tracking, to refine system functionalities and performance by 20%.</li>
+            <li><strong>Daily System and User Support:</strong> Provided continuous support for system operations, promptly addressing issues to ensure smooth and effective user experiences by 30%.</li>
+            <li><strong>Improved PMNA System Efficiency:</strong> Managed the PMNA system and its daily user support, leading to a 30% reduction in registration time and significantly enhancing operational efficiency.</li>
+            <li><strong>Boosted Teamcenter (PLM) Productivity:</strong> Supported the Teamcenter (PLM) system, implementing functionality enhancements and daily support, which resulted in a 20% increase in overall productivity.</li>
+            <li><strong>Optimized Document Management:</strong> Enhanced document management processes to ensure ISO compliance and improve document retrieval efficiency by 25%.</li>
+            <li><strong>Maintained Documentation Accuracy:</strong> Conducted regular document audits and supported training management, ensuring accuracy and consistency in documentation by 20%.</li>
         </ul>
 
     </section>

@@ -47,7 +47,14 @@
 
         <hr>
 
-        <p>August 15, 2024</p>
+        <p id="date"></p>
+
+        <script>
+            const nowDate = new Date()
+            const formattedDate = nowDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
+    
+            document.getElementById('date').textContent = formattedDate
+        </script>
 
         <p>Dear Hiring Manager,</p>
 

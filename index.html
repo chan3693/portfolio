@@ -26,8 +26,12 @@
                 skill.content.forEach(item => {
                     const p = document.createElement('p');
                     const strong = document.createElement('strong');
-                    strong.textContent = item.category + ": ";
-                    p.appendChild(strong);
+
+                    if (item.category){
+                        strong.textContent = item.category + ": ";
+                        p.appendChild(strong);
+                        
+                    }
                     p.appendChild(document.createTextNode(item.skills));
                     card.appendChild(p);
                 });
