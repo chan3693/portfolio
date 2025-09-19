@@ -2,8 +2,8 @@ const mySkills = [
     {
         title: "Programming Skills",
         content: [
-            { category: "Frontend & Web/Mobile Development", 
-                skills: "Swift, Kotlin, JavaScript, HTML5, CSS3, React.js, iOS, Android, React Native, SwiftUI, UIKit" },
+            { category: "Frontend & Mobile App Development", 
+                skills: "Swift, Kotlin, JavaScript, HTML5, CSS3, React.js, React Native, SwiftUI, UIKit" },
             { category: "Backend & Databases", 
                 skills: "Node.js, Express.js, RESTful APIs, Python, C#, MongoDB, Firebase, SQLite" },
             ]
@@ -18,9 +18,9 @@ const mySkills = [
             { category: "Project Management", 
                 skills: "Jira, Azure Boards, Bitbucket" },
             { category: "Development Environments", 
-                skills: "Xcode, Android Studio, Visual Studio Code, IntelliJ, HBuilderX" },
+                skills: "Xcode, Android Studio, Visual Studio Code, IntelliJ" },
             { category: "Other tools", 
-                skills: "Microsoft Office Suite, SharePoint, Visio, SAP, Teamcenter (PLM), Postman" },
+                skills: "Microsoft Office Suite, Postman, Docker, SharePoint, Visio, SAP, Teamcenter (PLM)" },
             ]
     },
     {
